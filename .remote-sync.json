@@ -1,0 +1,14 @@
+{
+  "transport": "scp",
+  "hostname": "46.101.216.166",
+  "port": "22",
+  "username": "root",
+  "target": "/var/www/html/wordpress/wp-content/themes/storefront",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "uploadOnSave": false,
+  "deleteLocal": false,
+  "password": "9000sgt10"
+}
