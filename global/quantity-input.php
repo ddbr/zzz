@@ -2,6 +2,7 @@
 <?php
 /**
  * Product quantity inputs
+ * Erweitert durch ein zweites Input feld für die Kategorie 'Meterware' oder alternativ als Product Attribute Meterware ja/nein
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
@@ -25,11 +26,10 @@ global $post, $product;
     }
   }
 	/*alternative
-	foreach ($cat as $categoria) {
     if ($product->get_attribute( 'meterware' ) == 'ja') {
       $meter = true;
     }
-  }	*/
+*/
 ?>
 
 <?php /*Standard number Input added ID field to make Javascript working with the correct Input field in loop*/ ?>
