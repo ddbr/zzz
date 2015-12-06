@@ -34,3 +34,9 @@ if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
         }
     }
 }
+
+add_filter( 'woocommerce_get_price_html', 'my_price_html', 100, 2 );
+function my_price_html( $price, $product ){
+    return 'xxx';
+    //return 'Was:' . str_replace( '<ins>', ' Now:<ins>', $price );
+}

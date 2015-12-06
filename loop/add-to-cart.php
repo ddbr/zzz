@@ -40,11 +40,8 @@ if( $product->get_price() === '' && $product->product_type != 'external' ) retur
 
 			?>
 			<form action="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="cart" method="post" enctype='multipart/form-data'>
-
 			 	<?php woocommerce_quantity_input(); ?>
-
 			 	<button type="submit" class="button alt"><?php echo $label; ?></button>
-
 			</form>
 			<?php
 
